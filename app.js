@@ -1,8 +1,8 @@
-function reverseArray(arr){
-    let arr1 = [];
-    for (let i = 1; i <= arr.length; i++)
-        arr1.push(arr[arr.length-i]);
-    return arr1;
+function reverseArray(array) {
+    const reversed = [];
+    for(let i = array.length - 1; i >= 0; i--)
+        reversed.push(array[i]);
+    return reversed;
 };
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
